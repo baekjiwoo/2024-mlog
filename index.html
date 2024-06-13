@@ -3,12 +3,119 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="this is kind of blog for me!"/>
+    <meta name="description" content="*** my blog ***"/>
     <title>. ☆ mlog ,, ☆.:｡.,,</title>
     <link rel="icon" type="image" href="./src/assets/img/hawaiifavicon.jpg"/>
+    <link rel="stylesheet" href="/src/assets/main.css"/>
   </head>
   <body>
-    <h1>mlog</h1>
+    <header id="header" role="banner">
+      <div class="headerInner">
+        <div class="headerMenu" role="navigation">
+          <ul>
+            <li><a href="#header">home</a></li>
+            <li><a href="#memo">memo</a></li>
+            <li><a href="#calendar">calendar</a></li>
+            <li><a href="#checkList">checklist</a></li>
+            <li><a href="#blog">blog</a></li>
+            <li><a href="#study">study</a></li>
+            <li><a href="#article">article</a></li>
+          </ul>
+        </div>
+
+        <div class="heanderCenter">
+          <span></span>
+        </div>
+
+        <div class="headerRight">
+          <div class="profile">
+            <img src="/src/assets/img/kittyfavicon.jpg"/>
+          </div>
+        </div>
+
+        <div
+          class="headerMobile"
+          id="headerToggle"
+          aria-controls="primary-menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+        <span></span>  
+        </div>
+      </div>
+    </header>
+
+    <main id="main" role="main">
+      <div class="mainInner">
+        <div class="mainWrap">
+
+          <div class="mainLeft">
+            <article class="mainItem m1">
+              <a href="" class="mainImg">
+                <h3 class="mainTitle"><em>memo</em></h3>
+                <img src="/src/assets/img/memo.png" alt="memo"/>
+              </a>
+            </article>
+
+            <article class="mainItem m3">
+              <a href="" class="mainImg">
+                <h3 class="mainTitle"><em>checklist</em></h3>
+                <img src="/src/assets/img/list.png" alt="checklist">
+              </a>
+            </article>
+
+            <article class="mainItem m5">
+              <a href="" class="mainImg">
+                <h3 class="mainTitle"><em>study</em></h3>
+                <img src="/src/assets/img/study2.png" alt="study"/>
+              </a>
+            </article>
+          </div>
+
+          <div class="mainRight">
+            <article class="mainItem m2">
+              <a href="" class="mainImg">
+                <h3 class="mainTitle"><em>calendar</em></h3>
+                <img src="/src/assets/img/calendar.png" alt="calendar">
+              </a>
+            </article>
+
+            <article class="mainItem m4">
+              <a href="" class="mainImg">
+                <h3 class="mainTitle"><em>blog</em></h3>
+                <img src="/src/assets/img/blog.png" alt="blog">
+              </a>
+            </article>
+
+            <article class="mainItem m6">
+              <a href="" class="mainImg">
+                <h3 class="mainTitle"><em>article</em></h3>
+                <img src="/src/assets/img/article2.png" alt="article"/>
+              </a>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" role="contentinfo">
+      <div class="footerInner">
+        <div class="footerWrap">
+          <div class="footerText">
+            , m l o g .
+          </div>
+          <div class="footerContact">
+            <a href="">
+              <img src="/src/assets/img/mail.png"/>
+              <p>contact us</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

@@ -1,35 +1,105 @@
 @import './base.css';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+#header {
+  width: 100%;
 }
 
-a,
-.green {
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.headerMenu {
+  font-size: 1rem;
+  text-align: center;
+  padding-left: 1rem;
+}
+
+.headerMenu li {
+  display: inline;
+}
+
+.headerMenu li a {
+  padding: 10px;
+  position: relative;
   text-decoration: none;
   color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.profile img {
+  width: 50px;
+  height: 50px;
+  object-fit: fill;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+#main {
+  width: 100%;
+  margin-top: 5vh;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.mainInner {
+  padding-left: 40vh;
+}
+
+.mainLeft {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.mainRight {
+  width: 50%;
+  float: right;
+  box-sizing: border-box;
+}
+
+.mainItem {
+  padding: 1rem;
+}
+
+.mainItem .mainImg {
+  display: block;
+}
+
+.mainItem .mainImg img {
+  width: 50%;
+  height: 300px;
+  object-fit: contain;
+}
+
+.mainItem a {
+  text-decoration: none;
+  padding-bottom: 2px;
+  color: black
+}
+
+#footer {
+  width: 100%;
+  display: inline-block;
+}
+
+.footerInner {
+  position: absolute;
+  left: 50%;
+}
+
+.footerText {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.footerContact {
+  display: inline-block;
+}
+
+.footerContact img {
+  width: 40px;
+  height: 30px;
+}
+
+.footerContact a {
+  text-decoration: none;
+  color: gray;
 }
